@@ -7,13 +7,13 @@ RSpec.describe 'Site Navigation' do
       visit '/merchants'
 
       within 'nav' do
-        click_link 'All Items'
+        click_link 'Item Index'
       end
 
       expect(current_path).to eq('/items')
 
       within 'nav' do
-        click_link 'All Merchants'
+        click_link 'Merchant Index'
       end
 
       expect(current_path).to eq('/merchants')
